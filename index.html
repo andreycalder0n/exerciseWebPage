@@ -42,7 +42,93 @@
             border: .1rem solid black;
             background-color: #B1AFFF;
         }
-        
+        #hero {
+            position: relative;
+        }
+        #hero #paper-texture {
+            display: flex;
+            width: 100%;
+        }
+        #hero #paper-texture img {
+            width: 100%;
+            object-fit: cover
+        }
+        #hero .information-container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100%;
+            color: black;
+            padding: 0 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #hero .information-container #foto {
+            width: 20rem;
+        }
+        #hero .information-container #foto img{
+            border-radius: 50%;
+        }
+        #hero .information-container .information {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.6rem;
+        }
+        #hero .information-container .information span {
+            display: flex;
+            color: rgb(42, 42, 42);
+            font-size: 1.2rem;
+            margin-bottom: 7rem;
+        }
+        main {
+            padding: 8rem;
+            font-size: 1.6rem;
+            background-color: #C8FFD4;
+        }
+        main .social-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            list-style: none;
+            padding: 1.6rem;
+            align-items: center;
+            width: 100%;
+        }
+        main .social-icons li a {
+            text-decoration: none;
+        }
+        main .social-icons li a i{
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.2rem;
+            color: #FDFDBD;
+            margin-left: .8rem;
+        }
+        main .social-icons #facebook {
+            background-color: #3b5998;
+        }
+        main .social-icons #github {
+            background-color: #171515;
+        }
+        main .social-icons #twitter {
+            background-color: #00acee;
+        }
+        main .social-icons #discord {
+            background-color: #7289da;
+        }
+        main .social-icons #youtube {
+            background-color: #c4302b ;
+        }
+        @media (min-width: 640px) {
+            #hero #paper-texture img {
+            height: 40rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -58,7 +144,7 @@
 
         <div class="information-container">
             <div class="image-container" id="foto">
-                <img src="./imgs/foto.jpg" id="image of a fictional character " />
+                <img src="./imgs/foto.jpg" alt="image of a fictional character " />
             </div>
             <div class="information">
                 <h1>DoodleBob </h1>
@@ -70,12 +156,14 @@
     <main>
         <p>I'm the main antagonist of the episodes "Frankendoodle" and "Doodle Dimension" from Nickelodeon's SpongeBob SquarePants show</p>
         <ul class="social-icons">
-            <li><a href="/" id="facebook"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="/" id="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="/" id="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="/" id="tiktok"><i class="fa-brands fa-tiktok"></i></a></li>
-            <li><a href="/" id="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="/" ><i class="fa-brands fa-facebook" id="facebook"></i></a></li>
+            <li><a href="/" ><i class="fa-brands fa-twitter" id="twitter"></i></a></li>
+            <li><a href="/" ><i class="fa-brands fa-github" id="github"></i></a></li>
+            <li><a href="/" ><i class="fa-brands fa-discord" id="discord"></i></a></li>
+            <li><a href="/" ><i class="fa-brands fa-youtube" id="youtube"></i></a></li>
         </ul>
     </main>
 </body>
 </html>
+        
+
